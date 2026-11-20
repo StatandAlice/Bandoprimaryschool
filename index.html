@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="robots" content="noindex">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abandoned Primary School</title>
+    <link rel="icon" type="image/x-icon" href="BandoHouseEmoji.png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Frijole&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap');
+        
+        body {
+            background-image: url('background.png'); 
+            background-repeat: no-repeat; 
+            background-position: center; 
+            background-size: cover; 
+            background-attachment: fixed; 
+            min-height: 100vh; 
+            margin: 0;
+            
+            padding: 20px;
+            background-color: #a89516;  
+        }
+
+        h1 {
+            color: white;
+            -webkit-text-stroke: 1.5px black;
+            font-size: 60px;
+            font-weight: bold;
+            text-align: center;
+            font-family: "Frijole", system-ui;
+        }
+
+        h2 {
+            color: white;
+            -webkit-text-stroke: 1.5px black;
+            font-size: 32px;
+            font-weight: bold;
+            font-family: "Frijole", system-ui;
+            background-color: rgb(150, 129, 54); padding: 10px;
+        }
+
+        h3 {
+            color: white;
+            -webkit-text-stroke: 1.5px black;
+            font-size: 24px;
+            font-weight: bold;
+            font-family: "Frijole", system-ui;
+            background-color: rgb(98, 84, 32); padding: 10px;
+        }
+        h4 {
+            color: white;
+            -webkit-text-stroke: 1px black;
+            font-size: 20px;
+            font-weight: bold;
+            font-family: "Frijole", system-ui;
+            background-color: rgb(83, 72, 37); padding: 10px;
+        }
+
+        p {
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            font-family: "Limelight", system-ui ;
+            background-color: rgb(113, 104, 70); padding: 10px;
+        }
+
+        /* Image Gallery Grid Layout */ 
+        .image-gallery {
+            display: flex;
+            flex-wrap: wrap;             /* Allows items to wrap onto multiple rows */
+            justify-content: center;     /* Centers the images horizontally */
+            gap: 20px;                   /* Clean space between the images */
+            margin: 30px 0;
+            align-items: center;
+        }
+
+        .image-gallery img {
+            border: 5px solid #333333;
+            height: 300px;
+            width: auto;
+            max-width: 100%;             /* Prevents images from overflowing smaller screens */
+            object-fit: cover;           /* Ensures images keep good proportions */
+        }
+
+        .button-54 {
+            font-family: "Open Sans", sans-serif;
+            font-size: 16px;
+            letter-spacing: 2px;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: #000;
+            cursor: pointer;
+            border: 3px solid;
+            padding: 0.25em 0.5em;
+            box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+            position: relative;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            background-color: white;
+        }
+
+        .button-54:active {
+            box-shadow: 0px 0px 0px 0px;
+            top: 5px;
+            left: 5px;
+        }
+
+        @media (min-width: 768px) {
+            .button-54 {
+                padding: 0.25em 0.75em;
+            }
+        }
+        
+        .limelight-regular {
+         font-family: "Limelight", sans-serif;
+         font-weight: 400;
+         font-style: normal;
+}
+
+    </style>
+</head>
+<body>
+
+    <h1>Abandoned Primary School</h1>
+    <h2>short history of the place:</h2>
+    <p>Situated in the Adelaide hills, the old Houghton Primary School, which opened in 1878 to cater to the growing local community. Over time, the school expanded, with several classrooms and sheds being constructed. The primary school closed down in 2014 due to declining student numbers, with the preschool remaining open until 2022. (Brown 2025) </p>
+    
+    <div class="image-gallery">
+        <img src="blackandwhite.png" alt="Placeholder image">
+        <img src="macrophotograthy.png" alt="Placeholder image">
+        <img src="abstract.png" alt="Placeholder image">
+        <img src="Double exposure.png" alt="Placeholder image">
+        <img src="HDR.png" alt="Placeholder image">
+        <img src="fisheye lens.png" alt="Placeholder image">
+    </div>
+    <h2>About Me:</h2>
+    <p>I have been an urban explorer for a couple of years now, visiting over 50 abandoned buildings around Adelaide. I’ve always enjoyed taking photos of the places I’ve visited, so I thought it would be a good idea to challenge myself a bit more and to try using some more advanced photography techniques to see what I could do.</p>
+    <h2>Why I chose the place:</h2>
+    <p>I saw videos of the primary school posted online by an online urbex account behind the boards. I then did my own research to find the location and discovered that it was listed as an historic place on Google Maps. I saw videos of people walking their dogs there, making me realise the place would be perfect for a school assignment, as it isn’t the type of place I’d get in lots of trouble for if I got caught going in there compared to other abandoned buildings.</p>
+    <button class="button-54" role="button" id="ShowPlanning" onclick="toggleText()">Show Folio</button>
+    
+    <h2 class="planning-text" style="display: none;">Planning:</h2>
+    <h3 class="planning-text" style="display: none;">Legality:</h3>
+        <div class="image-gallery planning-text" style="display: none;">
+        <img src="google maps screenshot.png" alt="Placeholder image">
+        <p>*Screenshot of Location (Google maps n.d.)</p>
+        <p>While the Old Houghton Primary is listed as an official tourist attraction on Google Maps, it’s still illegal to go on the grounds, as it is private property, meaning that all photos had to be taken from the roadside where the school is clearly visible. (Brown 2025)</p>
+    </div>
+ 
+    <h2 class="planning-text" style="display: none;">Skills:</h2>
+    
+    <h3 class="planning-text" style="display: none;">Black and White photography:</h3>
+    <h4 class="planning-text" style="display: none;">Unedited:</h4>
+    <div class="image-gallery planning-text" style="display: none;">
+        <img src="Black and white unedited.JPG" alt="Placeholder image">
+        <p>The original photo has colour and will be edited to have the colour removed. In black-and-white photos, it’s important for the image to have lots of contrast, as there are only 2 colours. A grainy appearance also helps, as it keeps the image in line with the vintage aesthetic of a black-and-white photo. (Adobe 2026)</p>
+    <h4 class="planning-text" style="display: none;">Edited:</h4>
+    <div class="image-gallery planning-text" style="display: none;">
+        <img src="blackandwhite.png" alt="Placeholder image">
+        <p>*Decreased saturation, Increased contrast, Added Grain, Added exposure. </p>
+    </div>
+
+    <h3 class="planning-text" style="display: none;">Fisheye Lens:</h3>
+    <h4 class="planning-text" style="display: none;">Unedited:</h4>
+    <div class="image-gallery planning-text" style="display: none;">
+        <img src="fisheye unedited.JPG" alt="Placeholder image">
+        <p>For this photo, I used a mate's fisheye lens, which gave me the idea to mimic the visual style of a body cam you’d see in a cop body cam compilation on YouTube. So this means increased exposure, added grain, and slightly decreased saturation.</p>
+    <h4 class="planning-text" style="display: none;">Edited:</h4>
+    <div class="image-gallery planning-text" style="display: none;">
+        <img src="fisheye lens.png" alt="Placeholder image">
+        <p>*Added exposure, Slighty Decreased saturation, Added Grain, Added texture, Added axon body cam overlay in photoshop</p>
+    </div>
+
+    <h3 class="planning-text" style="display: none;">Double exposure:</h3>
+    <h4 class="planning-text" style="display: none;">Unedited:</h4>
+    <div class="image-gallery planning-text" style="display: none;">
+        <img src="Double exposure unedited 1.JPG" alt="Placeholder image">
+        <img src="double exposure unedited 2.JPG" alt="Placeholder image">
+        <p>With a double exposure photo, two photos will be taken and overlaid on each other. The contrast between the two photos is very important; for example, taking a photo of a city skyline and then overlaying the image with a bold portrait. Adobe (2026a)</p>
+    <h4 class="planning-text" style="display: none;">Edited:</h4>
+    <div class="image-gallery planning-text" style="display: none;">
+        <img src="Double exposure.png" alt="Placeholder image">
+        <p>*Merged photos together, increased contrast, slightly increased saturation, slightly decreased exposure.</p>
+    </div>
+
+    <h3 class="planning-text" style="display: none;">Abstract photography:</h3>
+    <h4 class="planning-text" style="display: none;">Unedited:</h4>
+    <div class="image-gallery planning-text" style="display: none;">
+        <img src="abstract unedited.JPG" alt="Placeholder image">
+        <p>I used the fisheye lens when taking this photo of a fence. I then went into Lightroom and heavily colour-graded the image. After that, I went into Photoshop and applied some effects to the photo. Overall, I kind of just winged it with this photo and experimented with the tools I had available to me.</p>
+    <h4 class="planning-text" style="display: none;">Edited:</h4>
+    <div class="image-gallery planning-text" style="display: none;">
+        <img src="abstract.png" alt="Placeholder image">
+        <p>*Increased saturation, Deceased vibrance, Increased contrast, Increased exposure, applied pink tint, made colours warmer.</p>
+    </div>
+    <div class="image-gallery planning-text" style="display: none;">
+        <img src="abstract2.png" alt="Placeholder image">
+        <p>*Added Prism Effect, Added Light Leak effect, Added Halftone colour effect.</p>
+    </div>
+
+    <h3 class="planning-text" style="display: none;">HDR photography:</h3>
+    <h4 class="planning-text" style="display: none;">Unedited:</h4>
+    <div class="image-gallery planning-text" style="display: none;">
+        <img src="HDR unedited 1.JPG" alt="Placeholder image">
+        <img src="HDR unedited 2.JPG" alt="Placeholder image">
+        <img src="HDR unedited 3.JPG" alt="Placeholder image">
+        <p>When taking an HDR photo, the camera must remain stationary, ideally on a tripod, as the camera needs to stay still. With an HDR photo 3 different photos will be taken: one with a low exposure level, one with a normal exposure, and one with a high exposure. These photos will then be combined in an editing software like Lightroom. (Mansurov, 2010)</p>
+    <h4 class="planning-text" style="display: none;">Edited:</h4>
+    <div class="image-gallery planning-text" style="display: none;">
+        <img src="HDR.png" alt="Placeholder image">
+        <p>*Combined the photos, slightly increased saturation, slightly increased contrast, Cropped image for better composition</p>
+    </div>
+
+    <h3 class="planning-text" style="display: none;">Macro photography:</h3>
+    <h4 class="planning-text" style="display: none;">Unedited:</h4>
+    <div class="image-gallery planning-text" style="display: none;">
+        <img src="macro uneited.JPG" alt="Placeholder image">
+        <p>When taking this double exposure photo, I used lens whacking to capture the Image. Lens whacking is a photography technique where the lens of the camera is removed and flipped around; this creates a dreamy aesthetic to the image and allows a normal lens to be used as a macro lens. </p>
+    <h4 class="planning-text" style="display: none;">Edited:</h4>
+    <div class="image-gallery planning-text" style="display: none;">
+        <img src="macrophotograthy.png" alt="Placeholder image">
+        <p>*Slightly increased contrast, slightly increased saturation, increased vibrance, increased clarity, added a tiny bit of grain </p>
+    </div>
+    
+    <h2 class="planning-text" style="display: none;">Reference List:</h2>
+    <p class="planning-text" style="display: none;">Adobe 2026a, Double exposure photos: Film & digital | adobe Australia, www.adobe.com, viewed 10 November 2026, https://www.adobe.com/au/creativecloud/photography/discover/double-exposure-photography.html.</p>
+    <p class="planning-text" style="display: none;">Adobe 2026b, How to create black-and-white photography | adobe Australia, www.adobe.com, viewed 6 November 2026, https://www.adobe.com/au/creativecloud/photography/discover/black-and-white-photography.html.</p>
+    <p class="planning-text" style="display: none;">Brown, J 2025, Former Houghton primary latest in string of SA schools to hit the market, realestate_au, Realestate.com.au, viewed 5 November 2026, https://www.realestate.com.au/news/former-houghton-primary-latest-in-string-of-sa-schools-to-hit-the-market/.</p>
+    <p class="planning-text" style="display: none;">Google maps n.d., Old Houghton Primary School Grounds, Google maps place viewer, Google, viewed 5 November 2026, https://www.google.com/searchviewer/10?svid=CCYSESoPCg0vZy8xMWNzcHJxNzY1GAo.</p>
+    <p class="planning-text" style="display: none;">Mansurov, N 2010, HDR photography tutorial, Photography Life, viewed 10 November 2026, https://photographylife.com/hdr-photography-tutorial.</p>
+    <script>
+    function toggleText() {
+        const textElements = document.querySelectorAll(".planning-text");
+        const buttonElement = document.getElementById("ShowPlanning");
+
+        const isHidden = textElements[0].style.display === "none";
+
+        textElements.forEach(element => {
+            if (isHidden) {
+                element.style.display = "block";
+                buttonElement.innerText = "Hide Folio";
+            } else {
+                element.style.display = "none";
+                buttonElement.innerText = "Show Folio";
+            }
+        });
+    }
+    </script>
+</body>
+</html>
